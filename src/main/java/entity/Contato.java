@@ -20,6 +20,10 @@ public class Contato {
 	private String endereco;
 	private Calendar dataDeNascimento;
 
+	public Contato() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId() {
 		return id;
 	}

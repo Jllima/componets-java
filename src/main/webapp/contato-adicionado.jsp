@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+	
+	<c:import url="cabecalho.jsp"/>
+	
 	<div>Contato: ${param.nome} foi adicionado</div>
+	
+	<c:import url="rodape.jsp"/>
 </body>
 </html>

@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import entity.Contato;
+import facade.ContatoFacade;
 
 @WebServlet("/adicionaContato")
 public class AdicionaContatoServlet extends HttpServlet {
@@ -59,6 +60,9 @@ public class AdicionaContatoServlet extends HttpServlet {
 		contato.setEmail(email);
 		contato.setEndereco(endereco);
 		contato.setDataDeNascimento(dataNascimento);
+
+		ContatoFacade facade = new ContatoFacade();
+		facade.createContato(contato);
 
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/contato-adicionado.jsp");

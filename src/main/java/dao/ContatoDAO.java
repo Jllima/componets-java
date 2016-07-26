@@ -1,17 +1,15 @@
 package dao;
 
-import repository.ContatoRepository;
 import entity.Contato;
 
-public class ContatoDAO extends GenericDAO<Contato> implements
-		ContatoRepository {
+public class ContatoDAO extends GenericDAO<Contato> {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public ContatoDAO() {
 		super(Contato.class);
 	}
 
-	@Override
-	public void create(Contato contato) {
-
-
-	}
 }
