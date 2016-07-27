@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<customer id="1">
+		<name>Goku</name>
+		<email>v@mail.com</email>
+	</customer>
+	<customer id="2">
+		<name>Vedita</name>
+		<email>v@mail.com</email>
+	</customer>
+</customers>
