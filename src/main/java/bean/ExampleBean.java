@@ -13,7 +13,7 @@ public class ExampleBean {
 
 	public String upCaseText() {
 		this.text = this.text.toUpperCase();
-		return "show?faces-redirect=true";
+		return "show";
 	}
 
 	public void setText(String text) {
