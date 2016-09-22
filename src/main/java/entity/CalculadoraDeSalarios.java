@@ -1,18 +1,13 @@
 package entity;
 
-import enums.Cargo;
+import pattern.RegraDeCalculoStrategy;
 
 public class CalculadoraDeSalarios {
 
+	private RegraDeCalculoStrategy regra;
+
 	public double calculaSalario(Funcionario funcionario) {
-
-		if (funcionario.getCargo().equals(Cargo.DESENVOLVEDOR)) {
-			if (funcionario.getSalario() > 3000)
-				return funcionario.getSalario() * 0.8;
-			return funcionario.getSalario() * 0.9;
-		}
-		return funcionario.getSalario() * 0.85;
-
+		return funcionario.getCargo().getRegra().calcula(funcionario);
 	}
 
 }
